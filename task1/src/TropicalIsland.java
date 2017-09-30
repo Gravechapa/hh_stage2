@@ -1,5 +1,5 @@
-class TropicalIsland {
-    int getWaterVolume(Integer[][] island) {
+public class TropicalIsland {
+    public int getWaterVolume(Integer[][] island) {
         final int maxHight = 1000;
         boolean isStop;
         int result = 0;
