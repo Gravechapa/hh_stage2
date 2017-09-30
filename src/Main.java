@@ -10,10 +10,15 @@ public class Main
                 {6, 2, 1, 4},
                 {3, 1, 1, 4},
                 {8, 5, 4, 3}*/
-                {2, 2, 2},
+                /*{2, 2, 2},
                 {2, 1, 2},
                 {2, 1, 2},
-                {2, 1, 2}
+                {2, 1, 2}*/
+                {3, 3, 3, 3},
+                {3, 1, 1, 3},
+                {3, 1, 8, 3},
+                {3, 3, 3, 3}
+
         };
         TropicalIsland ti = new TropicalIsland();
         System.out.println(ti.getWaterVolume(island));

@@ -31,6 +31,11 @@ class TropicalIsland {
                 {
                     for (int j = 1; j < changedIsland[i].length - 1; ++j)
                     {
+                        if (island[i][j].equals(changedIsland[i][j]))
+                            {
+                                continue;
+                            }
+
                         int minHight = Math.min(Math.min(changedIsland[i][j - 1], changedIsland[i - 1][j]),
                                 Math.min(changedIsland[i][j + 1], changedIsland[i + 1][j]));
 
