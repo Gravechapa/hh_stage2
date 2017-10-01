@@ -2,6 +2,14 @@ public class InfiniteSequence
 {
     public int findSequence(int sequence)
     {
+        if (sequence == 0)
+            {
+                return 11;
+            }
+        if (sequence <=9 && sequence >= 1)
+            {
+                return sequence;
+            }
         int result;
         String seq = Integer.toString(sequence);
         String infSeq = "";
