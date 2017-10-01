@@ -21,6 +21,17 @@ public class Main
 
         };
         TropicalIsland ti = new TropicalIsland();
+        long start = System.nanoTime();
         System.out.println(ti.getWaterVolume(island));
+        long end = System.nanoTime();
+        long microseconds = (end - start) / 1000;
+        System.out.println(microseconds);
+
+        InfiniteSequence is = new InfiniteSequence();
+        start = System.nanoTime();
+        System.out.println(is.findSequence(555555559));
+        end = System.nanoTime();
+        microseconds = (end - start) / 1000;
+        System.out.println(microseconds);
     }
 }
