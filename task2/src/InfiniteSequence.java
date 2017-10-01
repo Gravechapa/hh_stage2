@@ -25,7 +25,6 @@ public class InfiniteSequence
             infSeq = infSeq.substring(infSeq.length() - seq.length() + 1);
 
         }
-
         return result;
     }
 }

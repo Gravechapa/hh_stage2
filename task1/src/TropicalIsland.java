@@ -24,6 +24,7 @@ public class TropicalIsland {
                             }
                     }
             }
+
         do
             {
                 isStop = true;
@@ -44,6 +45,31 @@ public class TropicalIsland {
                                 changedIsland[i][j] = minHight > island[i][j] ? minHight : island[i][j];
                                 isStop = false;
                             }
+                    }
+                }
+
+                if (isStop)
+                    {
+                        break;
+                    }
+
+                for (int i = changedIsland.length - 1; i > 0; --i)
+                {
+                    for (int j = changedIsland[i].length - 1; j > 0; --j)
+                    {
+                        if (island[i][j].equals(changedIsland[i][j]))
+                        {
+                            continue;
+                        }
+
+                        int minHight = Math.min(Math.min(changedIsland[i][j - 1], changedIsland[i - 1][j]),
+                                Math.min(changedIsland[i][j + 1], changedIsland[i + 1][j]));
+
+                        if (minHight < changedIsland[i][j])
+                        {
+                            changedIsland[i][j] = minHight > island[i][j] ? minHight : island[i][j];
+                            isStop = false;
+                        }
                     }
                 }
             } while(!isStop);
