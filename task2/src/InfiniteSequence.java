@@ -63,7 +63,7 @@ public class InfiniteSequence
 
                             if (currentPosition > offset)
                                 {
-                                    temp = temp.substring(temp.length() - overflow, temp.length());
+                                    temp = temp.substring(temp.length() - overflow);
                                     value = nextValue(Long.valueOf(temp2), Long.valueOf(temp), temp.length());
                                 }
                             else
